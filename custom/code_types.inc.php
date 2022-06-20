@@ -173,6 +173,12 @@ define_external_table($code_external_tables, 6, 'icd10_pcs_order_code', 'pcs_cod
 define_external_table($code_external_tables, 13, 'valueset', 'code', 'description', 'description', array(), '');
 define_external_table($code_external_tables, 14, 'valueset_oid', 'code', 'description', 'description', array(), '');
 
+// Definiciones CIE 10 en Español
+// Modificado agregando Procedimientos y diagnósticos 2017-06-05
+define_external_table($code_external_tables, 20, 'cie10_diag', 'formatted_dx_code', 'long_desc', 'short_desc', array("active='1'","valid_for_coding = '1'"), 'revision DESC');
+define_external_table($code_external_tables, 21, 'cie10_proced', 'pcs_code', 'long_desc', 'short_desc', array("active='1'","valid_for_coding = '1'"), 'revision DESC');
+//**** Fin Definiciones CIE 10
+
 /**
  * This array stores the external table options. See above for $code_types array
  * 'external' attribute  for explanation of the option listings.
@@ -192,7 +198,9 @@ $ct_external_options = array(
   '11' => xl('SNOMED (RF2) Clinical Term'),
   '12' => xl('SNOMED (RF2) Procedure'),
   '13' => xl('CQM (Mixed Types) Value Set'),
-  '14' => xl('CQM OID Value Set')
+  '14' => xl('CQM OID Value Set'),
+  '20' => xl('CIE-10 Diagnosticos'),
+  '21' => xl('CIE-10 Procedimientos'),
 );
 
 /**
