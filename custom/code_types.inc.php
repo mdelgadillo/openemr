@@ -174,6 +174,7 @@ define_external_table($code_external_tables, 13, 'valueset', 'code', 'descriptio
 define_external_table($code_external_tables, 14, 'valueset_oid', 'code', 'description', 'description', array(), '');
 
 // Definiciones CIE 10 en Español
+//dellol
 define_external_table($code_external_tables, 20, 'cie10_diag', 'formatted_dx_code', 'long_desc', 'short_desc', array("active='1'","valid_for_coding = '1'"), 'revision DESC');
 define_external_table($code_external_tables, 21, 'cie10_proced', 'pcs_code', 'long_desc', 'short_desc', array("active='1'","valid_for_coding = '1'"), 'revision DESC');
 //**** Fin Definiciones CIE 10
