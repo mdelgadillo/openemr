@@ -44,7 +44,7 @@ $registrationTranslation = json_encode(array(
 
 // Auto-generate the link if no override is specified. This is tied directly to the OpenEMR Wiki
 $userManual = ($GLOBALS['user_manual_link'] === '')
-    ? "https://open-emr.org/wiki/index.php/OpenEMR_" . $versionService->asString(false, false) . "_Users_Guide"
+    ? "https://google.com" //. $versionService->asString(false, false) . "_Users_Guide"
     : $GLOBALS['user_manual_link'];
 
 $viewArgs = [
